@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>세션 선택 - switch문</title>
+	<link rel="stylesheet" href="css/switch.css">
+</head>
+<body>
+	<script>
+		// 	조건문에서 처리할 명령이 많다면 if~else 문을 여러 개 사용 하는 것보다 switch 문이 더 편함
+		var session = prompt("관심 세션을 선택해 주세요. 1-마케팅, 2-개발, 3-디자인");
+
+		// 조건은 case 문의 값과 일대일로 일치해야 함 / 조건과 일치하는 case 문의 명령을 실행한 후에는 switch 문을 완전히 나옴
+		switch (session) {
+			case "1" : document.write("<p>마케팅 세션은 <strong>101호</strong>에서 진행됩니다.</p>")
+				break;
+			case "2" : document.write("<p>개발 세션은 <strong>203호</strong>에서 진행됩니다.</p>");
+				break;
+			case "3" : document.write("<p>디자인 세션은 <strong>305호</strong>에서 진행됩니다.</p>")
+				break;
+			// 1, 2, 3이 아닌 경우라면 아래 알럿
+		default: alert("잘못 입력했습니다.");
+		}
+	</script>
+</body>
+</html>

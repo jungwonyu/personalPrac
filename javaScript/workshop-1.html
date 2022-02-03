@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workshop</title>
+    <style>
+		body {
+			font-size:1.2em;
+			text-align:center;
+		}
+    </style>
+</head>
+<body>
+    <h1>4의 배수일까 아닐까?</h1>
+    <!--조건: 1) 프롬프트 문을 이용하여 숫자 입력 받기 2) [취소]버튼을 누르면 결과 보여 주지 않기
+    3) 입력받은 숫자를 4로 나눈 나머지가 0이면 4의 배수이고 0이 아니면 4의 배수가 아닙니다.-->
+    <script>
+        // 변수 선언과 동시에 창에 띄울 값 넣기
+        var userNumber = prompt("숫자를 입력하세요.");
+        // 조건문, 넣은 값이 4으로 나눴을 때 나머지가 없으면 "4의 배수입니다." 아니라면 "4의 배수가 아닙니다."
+        if (userNumber !== null) {
+            if (userNumber % 4 === 0)
+                document.write(userNumber + "은(는) 4의 배수입니다.");
+            else
+                document.write(userNumber + "은(는) 4의 배수가 아닙니다.");
+        } else
+            alert("");
+    </script>
+</body>
+</html>
