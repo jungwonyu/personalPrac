@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>버튼을 클릭하면 배경색 바꾸기</title>
+    <style>
+        #result {
+            width: 500px;
+            height: 300px;
+            margin: 30px auto;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#" onclick="changeBg('green')">Green</a></li>
+    <li><a href="#" onclick="changeBg('orange')">Orange</a></li>
+    <li><a href="#" onclick="changeBg('yellow')">Yellow</a></li>
+</ul>
+
+<div id="result"></div>
+
+<script>
+    function changeBg(color) {
+        var result = document.querySelector('#result');
+        result.style.backgroundColor = color;
+    }
+</script>
+</body>
+</html>
